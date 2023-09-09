@@ -1,0 +1,18 @@
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false"
+                        *ngFor="let car of cars">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{car.brand}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div>
+      <div>{{car.id}}</div>
+      <div>{{car.brand}}</div>
+      <div>{{car.price}}</div>
+      <div>{{car.year}}</div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
+
